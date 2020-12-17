@@ -14,7 +14,7 @@
 </head>
 <body class="sb-nav-fixed">
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Grocer Admin Panel</a>
+    <a class="navbar-brand" href={{ route('admin.dashboard') }}>Grocer Admin Panel</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
     <!-- Navbar Search-->
     @if(Request::path() === 'dashboard')
@@ -95,9 +95,13 @@
                         Add User
                     </a>
                     <a class="nav-link" href={{ route('admin.dashboard') }}>
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        <div class="sb-nav-link-icon"><i class="fa fa-users"></i></div>
                         Users
                     </a>
+{{--                    <a class="nav-link" href={{ route('products') }}>--}}
+{{--                        <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>--}}
+{{--                        Products--}}
+{{--                    </a>--}}
                 </div>
             </div>
             <div class="sb-sidenav-footer">

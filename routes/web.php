@@ -33,3 +33,6 @@ Route::post('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'a
 Route::get('/admin/{user}', [App\Http\Controllers\AdminController::class, 'show'])->name('admin.edit');
 Route::put('/admin/{user}', [App\Http\Controllers\AdminController::class, 'update'])->name('admin.update');
 Route::get('/admin/delete/{user}', [App\Http\Controllers\AdminController::class, 'destroy'])->name('admin.delete');
+
+//Product Routes
+Route::get('/products', [App\Http\Controllers\AdminController::class, 'showProducts'])->name('products');
