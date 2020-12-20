@@ -358,6 +358,24 @@ template {
   display: none !important;
 }
 
+
+#product {
+    max-width: 30%;
+    height: auto;
+}
+
+#textDetails {
+    font-weight: bold;
+    font-family: BlinkMacSystemFont;
+}
+
+#detailsHeader {
+
+    font-size: 30px;
+    font-weight: inherit;
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;

@@ -42,12 +42,13 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $this->validateProduct();
-        $request->image->store('images');
+        $filename = $request->image->getClientOriginalName();
+        $request->image->storeAs('images', $filename, 'public');
         $user =Product::create([
             'name' => request('name'),
             'quantity' => request('quantity'),
             'price' => request('price'),
-            'image' => request('image'),
+            'image' => $filename,
         ]);
         $user->save();
 
@@ -75,6 +76,10 @@ class ProductController extends Controller
         return view('Products.edit', compact('product'));
     }
 
+    public function details(Product $product){
+
+        return view('Products.details', compact('product'));
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -93,16 +98,24 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Product $product)
+    public function update(Product $product )
     {
-        $validated = request()->validate([
+
+        request()->validate([
             'name' => ['required', 'string', 'max:255'],
             'quantity' => ['required'],
             'price' => ['required'],
             'image' =>['required', 'file', 'image']
         ]);
+        $filename = request()->image->getClientOriginalName();
+        request()->image->storeAs('images', $filename, 'public');
 
-        $product->update($validated);
+        $product->update([
+            'name' => request('name'),
+            'quantity' => request('quantity'),
+            'price' => request('price'),
+            'image' => $filename,
+        ]);
 
         return redirect(route('products'));
     }

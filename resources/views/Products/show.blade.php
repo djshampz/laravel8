@@ -13,7 +13,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-table mr-1"></i>
-                DataTable Example
+                Product Table
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -35,7 +35,7 @@
                         <tbody>
                         @foreach($products as $product)
                             <tr>
-                                <td>{{ $product->name }}</td>
+                                <td><a href={{ route('product.details', $product->id) }}>{{ $product->name }}</a></td>
                                 <td>{{ $product->price }}</td>
                                 <td>{{ $product->quantity }}</td>
                                 <td><a href={{ route('product.edit', $product->id) }} ><button class="btn-primary">Edit</button></a></td>

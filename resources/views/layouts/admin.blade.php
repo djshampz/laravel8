@@ -98,10 +98,10 @@
                         <div class="sb-nav-link-icon"><i class="fa fa-users"></i></div>
                         Users
                     </a>
-{{--                    <a class="nav-link" href={{ route('products') }}>--}}
-{{--                        <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>--}}
-{{--                        Products--}}
-{{--                    </a>--}}
+                    <a class="nav-link" href={{ route('products') }}>
+                        <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>
+                        Products
+                    </a>
                 </div>
             </div>
             <div class="sb-sidenav-footer">
@@ -115,7 +115,7 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                    <div class="text-muted">Copyright &copy; Grocer 2020</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;
