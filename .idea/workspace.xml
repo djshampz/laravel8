@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="second&#10;commit">
+    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +185,7 @@
       <workItem from="1606918774609" duration="4404000" />
       <workItem from="1608210787520" duration="8213000" />
       <workItem from="1608211532810" duration="3164000" />
-      <workItem from="1608440571792" duration="3521000" />
+      <workItem from="1608440571792" duration="7367000" />
     </task>
     <task id="LOCAL-00001" summary="second&#10;commit">
       <created>1608211568925</created>
@@ -195,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608211568925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="third commit">
+      <created>1608444193042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608444193042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +222,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second&#10;commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second&#10;commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="146" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606566017017">
@@ -247,18 +254,18 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1606557768666" />
-    <state x="501" y="276" key="NewPhpFileDialog" timestamp="1608215161124">
+    <state x="501" y="276" key="NewPhpFileDialog" timestamp="1608444166479">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="501" y="276" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1608215161124" />
+    <state x="501" y="276" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1608444166479" />
     <state x="180" y="0" key="SettingsEditor" timestamp="1606589660925">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1606589660925" />
-    <state x="279" y="86" key="Vcs.Push.Dialog.v2" timestamp="1606589225498">
+    <state x="279" y="86" key="Vcs.Push.Dialog.v2" timestamp="1608444200230">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="279" y="86" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1606589225498" />
+    <state x="279" y="86" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1608444200230" />
     <state x="486" y="267" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606589280279">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -267,9 +274,9 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="343" y="154" key="run.anything.popup/0.0.1366.732@0.0.1366.732" timestamp="1606585603711" />
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608443711855">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608446005007">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608443711855" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608446005007" />
   </component>
 </project>

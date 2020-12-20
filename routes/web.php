@@ -38,3 +38,6 @@ Route::get('/admin/delete/{user}', [App\Http\Controllers\AdminController::class,
 Route::get('/products', [App\Http\Controllers\AdminController::class, 'showProducts'])->name('products');
 Route::get('admin/products/create', [App\Http\Controllers\ProductController::class, 'index'])->name('addProduct');
 Route::post('/products', [App\Http\Controllers\ProductController::class, 'store'])->name('storeProduct');
+Route::get('products/{product}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.edit');
+Route::put('products/{product}', [App\Http\Controllers\ProductController::class, 'update'])->name('product.update');
+Route::get('/product/delete/{product}',  [App\Http\Controllers\ProductController::class, 'destroy'])->name('product.delete');
