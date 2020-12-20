@@ -6,14 +6,14 @@
         <div class="container-fluid">
             <h1 class="mt-4">Dashboard</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item active"><a href={{ route('addUsers') }}><button class="btn-primary">Add User</button></a></li>
             </ol>
             <div class="row">
             </div>
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table mr-1"></i>
-                    DataTable Example
+                   Users table
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -37,7 +37,7 @@
                             <tbody>
                             @foreach($users as $user)
                                 <tr>
-                                    <td>{{ $user->name }}</td>
+                                    <td><a href= {{ route('user.details', $user->id) }}> {{ $user->name }} </a></td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->phone }}</td>
                                     <td>{{ $user->address }}</td>

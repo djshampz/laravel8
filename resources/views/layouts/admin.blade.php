@@ -54,7 +54,7 @@
                         </a>
                     @endif
 
-                    <a class="dropdown-item">
+                    <a class="dropdown-item" href= {{ route('user.details', Auth::user()->id)}}>
                         Profile
                     </a>
 
@@ -90,10 +90,6 @@
             <div class="sb-sidenav-menu">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="/admin/adduser">
-                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        Add User
-                    </a>
                     <a class="nav-link" href={{ route('admin.dashboard') }}>
                         <div class="sb-nav-link-icon"><i class="fa fa-users"></i></div>
                         Users

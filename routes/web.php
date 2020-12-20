@@ -28,10 +28,11 @@ Route::get('/admin', function (){
 
 
 //Admin Routes
-Route::get('/admin/adduser', [App\Http\Controllers\AdminController::class, 'create']);
+Route::get('/admin/adduser', [App\Http\Controllers\AdminController::class, 'create'])->name('addUsers');
 Route::post('/admin/dashboard', [App\Http\Controllers\AdminController::class, 'addUser'])->name('admin.adduser');
 Route::get('/admin/{user}', [App\Http\Controllers\AdminController::class, 'show'])->name('admin.edit');
 Route::put('/admin/{user}', [App\Http\Controllers\AdminController::class, 'update'])->name('admin.update');
+Route::get('/admin/details/{user}', [App\Http\Controllers\AdminController::class, 'details'])->name('user.details');
 Route::get('/admin/delete/{user}', [App\Http\Controllers\AdminController::class, 'destroy'])->name('admin.delete');
 
 //Product Routes

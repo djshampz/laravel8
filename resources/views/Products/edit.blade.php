@@ -51,18 +51,21 @@
                         </div>
                     </div>
 
+
                     <div class="form-group row">
                         <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
-
                         <div class="col-md-6">
-                            <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ $product->image }}" required autocomplete="image">
-
+                            <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ asset('/storage/images/'.$product->image) }}" required>
+                            <div id="product">
+                                <img src={{ asset('/storage/images/'.$product->image) }} class="card-img-top" alt={{ $product->name }}>
+                            </div>
                             @error('image')
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                             @enderror
                         </div>
+
                     </div>
 
                     <div class="form-group row mb-0">

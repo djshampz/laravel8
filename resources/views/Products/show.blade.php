@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <h1 class="mt-4">Products</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active"><a href={{ route('addProduct') }} ><button class="btn-primary">Add</button></a></li>
+            <li class="breadcrumb-item active"><a href={{ route('addProduct') }} ><button class="btn-primary">Add Product</button></a></li>
         </ol>
         <div class="row">
         </div>

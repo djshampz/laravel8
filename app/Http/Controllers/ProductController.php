@@ -117,7 +117,7 @@ class ProductController extends Controller
             'image' => $filename,
         ]);
 
-        return redirect(route('products'));
+        return redirect(route('product.details', $product));
     }
 
     /**

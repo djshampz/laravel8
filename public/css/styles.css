@@ -364,6 +364,11 @@ template {
     height: auto;
 }
 
+#imagedetails {
+    max-width: 10%;
+    height: auto;
+}
+
 #textDetails {
     font-weight: bold;
     font-family: BlinkMacSystemFont;

@@ -62,8 +62,13 @@ class AdminController extends Controller
         ]);
         $user->update($validateUser);
 
-        return redirect(route('admin.dashboard'));
+        return redirect(route('user.details', $user));
 
+    }
+
+    public function details(User $user){
+
+        return view('admin.userDetails', compact('user'));
     }
 
     public function destroy(User $user){
