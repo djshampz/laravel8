@@ -277,7 +277,7 @@
                         <div class="sb-nav-link-icon"><i class="fa fa-shopping-cart"></i></div>
                         Cart
                     </a>
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href={{ route('goShopping') }}>
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                         Shopping
                     </a>
@@ -293,18 +293,21 @@
         </nav>
     </div>
     <div id="layoutSidenav_content">
-        <div class="card border-top align-content-center">
+        <div class="card border-top align-content-center bg-secondary">
             <div class="card-header align-content-center text-center">
                 <div class="card-body">
                     @yield('content')
                 </div>
+                    <div class="row row-cols-3" id="myrow">
+                        @yield('shopping')
+                    </div>
             </div>
         </div>
 
         <footer class="py-4 bg-light mt-auto">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                    <div class="text-muted">Copyright &copy; Grocer 2020</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;

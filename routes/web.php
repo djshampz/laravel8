@@ -43,3 +43,7 @@ Route::get('products/{product}', [App\Http\Controllers\ProductController::class,
 Route::put('products/{product}', [App\Http\Controllers\ProductController::class, 'update'])->name('product.update');
 Route::get('/product/delete/{product}',  [App\Http\Controllers\ProductController::class, 'destroy'])->name('product.delete');
 Route::get('/product/details/{product}', [App\Http\Controllers\ProductController::class, 'details'])->name('product.details');
+
+
+//Shopping routes
+Route::get('/shopping', [App\Http\Controllers\ProductController::class, 'shopping'])->name('goShopping');

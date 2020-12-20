@@ -132,4 +132,11 @@ class ProductController extends Controller
 
         return  redirect(route('products'));
     }
+
+    public function shopping(){
+
+        $products = Product::latest()->get()->all();
+
+        return view('Users.products', compact('products'));
+    }
 }
