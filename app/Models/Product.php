@@ -15,4 +15,8 @@ class Product extends Model
         'quantity',
         'image'
     ];
+
+    public function users(){
+        return $this->belongsToMany(User::class, 'product_user')->withTimestamps();
+    }
 }

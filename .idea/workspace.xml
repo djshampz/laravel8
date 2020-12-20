@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="5th commit Optimizations">
+    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="6th commit Optimizations (User Shopping list)">
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_02_155740_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_02_155740_create_products_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Users/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Users/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -189,7 +193,7 @@
       <workItem from="1606918774609" duration="4404000" />
       <workItem from="1608210787520" duration="8213000" />
       <workItem from="1608211532810" duration="3164000" />
-      <workItem from="1608440571792" duration="22893000" />
+      <workItem from="1608440571792" duration="48822000" />
     </task>
     <task id="LOCAL-00001" summary="second&#10;commit">
       <created>1608211568925</created>
@@ -240,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608456504225</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="6th commit Optimizations (User Shopping list)">
+      <created>1608464494503</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608464494503</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,17 +276,18 @@
     <MESSAGE value="third commit (Product Crud)" />
     <MESSAGE value="4th commit (Product details and image display)" />
     <MESSAGE value="5th commit Optimizations" />
-    <option name="LAST_COMMIT_MESSAGE" value="5th commit Optimizations" />
+    <MESSAGE value="6th commit Optimizations (User Shopping list)" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th commit Optimizations (User Shopping list)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="146" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606566017017">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="391" y="146" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.732@0.0.1366.732" timestamp="1606566017017" />
-    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608443236185">
+    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608483849580">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.732@0.0.1366.732" timestamp="1608443236185" />
+    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.732@0.0.1366.732" timestamp="1608483849580" />
     <state x="467" y="98" key="FileChooserDialogImpl" timestamp="1606589271304">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -300,18 +312,18 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="388" y="59" key="NewPhpClassDialog/0.0.1366.732@0.0.1366.732" timestamp="1608449283842" />
-    <state x="501" y="276" key="NewPhpFileDialog" timestamp="1608458398546">
+    <state x="501" y="276" key="NewPhpFileDialog" timestamp="1608465174855">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="501" y="276" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1608458398546" />
+    <state x="501" y="276" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1608465174855" />
     <state x="180" y="0" key="SettingsEditor" timestamp="1606589660925">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1606589660925" />
-    <state x="279" y="86" key="Vcs.Push.Dialog.v2" timestamp="1608456509149">
+    <state x="279" y="86" key="Vcs.Push.Dialog.v2" timestamp="1608465145642">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="279" y="86" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1608456509149" />
+    <state x="279" y="86" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1608465145642" />
     <state x="486" y="267" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606589280279">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -320,9 +332,9 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="343" y="154" key="run.anything.popup/0.0.1366.732@0.0.1366.732" timestamp="1606585603711" />
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608463923071">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608490228512">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608463923071" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608490228512" />
   </component>
 </project>

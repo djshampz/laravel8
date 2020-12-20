@@ -360,7 +360,8 @@ template {
 
 
 #product {
-
+    max-width: 25%;
+    height: auto;
 }
 #shoppingproduct{
 }

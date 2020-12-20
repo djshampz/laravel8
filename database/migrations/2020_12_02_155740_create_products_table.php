@@ -21,6 +21,18 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->timestamps();
         });
+
+        Schema::create('product_user', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id');
+            $table->foreignId('product_id');
+            $table->timestamps();
+
+            $table->unique(['user_id', 'product_id']);
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+        });
     }
 
     /**

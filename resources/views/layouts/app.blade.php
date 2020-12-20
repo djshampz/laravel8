@@ -168,6 +168,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+        use App\Http\Controllers\CartController;
+    ?>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -273,9 +277,13 @@
                     </a>
                         @endif
                     <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href={{ route('cart') }}>
                         <div class="sb-nav-link-icon"><i class="fa fa-shopping-cart"></i></div>
-                        Cart
+                        Cart &nbsp; <span class="disabled">(
+<!--                            --><?php
+                                     echo CartController::cartItem();
+//                                  ?>
+                            )</span>
                     </a>
                     <a class="nav-link" href={{ route('goShopping') }}>
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>

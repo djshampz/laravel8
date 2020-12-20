@@ -47,3 +47,7 @@ Route::get('/product/details/{product}', [App\Http\Controllers\ProductController
 
 //Shopping routes
 Route::get('/shopping', [App\Http\Controllers\ProductController::class, 'shopping'])->name('goShopping');
+Route::get('cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
+Route::post('cart', [App\Http\Controllers\CartController::class, 'store'])->name('addtoCart');
+Route::get('cart/delete/{product}', [App\Http\Controllers\CartController::class, 'destroy'])->name('item.delete');
+Route::get('/cartItem', [App\Http\Controllers\CartController::class, 'cartItem']);
