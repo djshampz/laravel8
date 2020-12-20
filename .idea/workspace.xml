@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="first commit">
+    <list default="true" id="b80f8873-7239-42bf-994f-d66b903ebaa8" name="Default Changelist" comment="second&#10;commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,25 +185,48 @@
       <workItem from="1606824274909" duration="777000" />
       <workItem from="1606918774609" duration="4404000" />
       <workItem from="1608210787520" duration="8213000" />
+      <workItem from="1608211532810" duration="3164000" />
+      <workItem from="1608440571792" duration="3521000" />
     </task>
+    <task id="LOCAL-00001" summary="second&#10;commit">
+      <created>1608211568925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608211568925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="second&#10;commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second&#10;commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="391" y="146" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606566017017">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="391" y="146" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.732@0.0.1366.732" timestamp="1606566017017" />
-    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608210458260">
+    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608443236185">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.732@0.0.1366.732" timestamp="1608210458260" />
+    <state x="417" y="112" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.732@0.0.1366.732" timestamp="1608443236185" />
     <state x="467" y="98" key="FileChooserDialogImpl" timestamp="1606589271304">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -208,6 +247,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="1320" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1606557768666" />
+    <state x="501" y="276" key="NewPhpFileDialog" timestamp="1608215161124">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="501" y="276" key="NewPhpFileDialog/0.0.1366.732@0.0.1366.732" timestamp="1608215161124" />
     <state x="180" y="0" key="SettingsEditor" timestamp="1606589660925">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -224,9 +267,9 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="343" y="154" key="run.anything.popup/0.0.1366.732@0.0.1366.732" timestamp="1606585603711" />
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608211330450">
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1608443711855">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608211330450" />
+    <state x="346" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1608443711855" />
   </component>
 </project>

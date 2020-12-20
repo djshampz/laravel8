@@ -36,3 +36,5 @@ Route::get('/admin/delete/{user}', [App\Http\Controllers\AdminController::class,
 
 //Product Routes
 Route::get('/products', [App\Http\Controllers\AdminController::class, 'showProducts'])->name('products');
+Route::get('admin/products/create', [App\Http\Controllers\ProductController::class, 'index'])->name('addProduct');
+Route::post('/products', [App\Http\Controllers\ProductController::class, 'store'])->name('storeProduct');

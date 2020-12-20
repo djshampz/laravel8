@@ -75,6 +75,6 @@ class AdminController extends Controller
     public function showProducts(){
 
 
-        return view('Products.index', ['products' => Product::latest()->get()->all()]);
+        return view('Products.show', ['products' => Product::latest()->get()->all()]);
     }
 }
