@@ -358,7 +358,10 @@ template {
   display: none !important;
 }
 
-
+#homepage {
+    background-color: black;
+    background-image: url("/public/imgaes/gettyimages-871227828-612x612.jpg");
+}
 #product {
     max-width: 25%;
     height: auto;

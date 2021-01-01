@@ -64,6 +64,9 @@ section {
   display: block;
 }
 
+#callToaction {
+    padding-bottom:34px;
+}
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
