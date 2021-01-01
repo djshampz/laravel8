@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -138,5 +140,11 @@ class ProductController extends Controller
         $products = Product::latest()->get()->all();
 
         return view('Users.products', compact('products'));
+    }
+
+    public function history(){
+        $orders = Order::where('customer_name', Auth::user()->name)->with('products')->get();
+
+        return view('Users.purchases', compact('orders'));
     }
 }

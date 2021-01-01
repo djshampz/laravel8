@@ -47,4 +47,8 @@ class User extends Authenticatable
     public function products(){
         return $this->belongsToMany(Product::class, 'product_user')->withTimestamps();
     }
+    public function order()
+    {
+        return $this->hasMany(Order::class);
+    }
 }

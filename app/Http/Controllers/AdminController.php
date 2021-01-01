@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Order;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -81,5 +83,16 @@ class AdminController extends Controller
 
 
         return view('Products.show', ['products' => Product::latest()->get()->all()]);
+    }
+
+    public function orders(){
+
+        return view('admin.orders', ['orders' => Order::latest()->get()->all()]);
+    }
+
+    public function usersOrder(){
+        $orders = Order::with('products')->get();
+
+        return view('admin.userOrder', compact('orders'));
     }
 }

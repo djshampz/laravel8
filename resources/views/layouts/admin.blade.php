@@ -98,6 +98,10 @@
                         <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>
                         Products
                     </a>
+                    <a class="nav-link" href={{ route('orders') }}>
+                        <div class="sb-nav-link-icon"><i class="fa fa-archive"></i></div>
+                        Orders
+                    </a>
                 </div>
             </div>
             <div class="sb-sidenav-footer">

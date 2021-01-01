@@ -277,17 +277,22 @@
                     </a>
                         @endif
                     <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href={{ route('cart') }}>
+                    <a class="nav-link" href={{ route('index2') }}>
                         <div class="sb-nav-link-icon"><i class="fa fa-shopping-cart"></i></div>
                         Cart &nbsp; <span class="disabled">(
-<!--                            --><?php
-                                     echo CartController::cartItem();
-//                                  ?>
+{{--<!--                            --><?php--}}
+{{--                                     echo CartController::cartItem();--}}
+{{--//                                  ?>--}}
+                            {{ \Gloudemans\Shoppingcart\Facades\Cart::count() }}
                             )</span>
                     </a>
                     <a class="nav-link" href={{ route('goShopping') }}>
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                         Shopping
+                    </a>
+                    <a class="nav-link" href={{ route('history') }}>
+                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                        History
                     </a>
                     @endif
                 </div>
@@ -326,6 +331,7 @@
         </footer>
     </div>
 </div>
+@yield('extra.js')
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src={{ asset('js/scripts.js') }}></script>
